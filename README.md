@@ -1,35 +1,80 @@
-# ⌨️ Terminal Portfolio
+# Terminal Portfolio
 
-> **A cyberpunk-styled, fully interactive terminal portfolio that runs in your browser.**
-> Type commands. Switch themes. Discover secrets. Welcome to the vibe.
+A portfolio that runs in your browser as an interactive terminal. Instead of scrolling through a normal webpage, you type commands to learn about me, see my projects, or mess around with a few easter eggs.
 
----
-
-## 🚀 What is this?
-
-It's my personal portfolio reimagined as a terminal. No scrolling pages, no
-boring hero images — just a blinking cursor and a keyboard. Type `help` and
-see what happens. It's part flex, part art project, part "hey, I built this"
-— and it's 100% mine.
-
-Built with **vanilla HTML, CSS, and JavaScript**. No frameworks. No bloat.
-Just good old-fashioned frontend sorcery.
+Built with plain HTML, CSS, and JavaScript — no frameworks, no dependencies.
 
 ---
 
-## ✨ Features
+## How to use
 
-| Feature | What it does |
-|---------|--------------|
-| 🖥️ **Real terminal experience** | Commands, output, arrow-key history (sort of — okay, it's mostly the Enter key) |
-| 🌈 **4 themes** | `neon`, `amber`, `matrix`, `solarized` — switch on the fly |
-| 🖼️ **ASCII boot sequence** | A bigger-than-needed HWBT banner + system boot lines |
-| 🌧️ **Matrix rain** | Subtle background rain. Yes, you're a hacker now |
-| 📺 **CRT scanlines** | Retro monitor vibes, minus the back pain |
-| 🔊 **Keystroke beep** | Toggleable sound. Old man hacker energy |
-| 🎭 **Easter eggs** | `sudo`, `secret`, `exit` — try them |
-| 💾 **Zero dependencies** | Literally just 4 files and your browser |
+Open the live site (or run it locally) and type `help` to see all commands.
+
+Main commands:
+
+- `about` — short intro
+- `skills` — tech stack
+- `projects` — what I've built
+- `contact` — email and GitHub
+- `theme` — switch between neon, amber, matrix, and solarized
+- `clear` — wipe the screen
+
+Some commands do nothing useful. Try `sudo`, `secret`, or `exit`.
 
 ---
-## 🎮 Commands
 
+## Customizing
+
+Everything personal lives in one file: `data.js`. Open it, replace the placeholder info with yours, and you're done.
+
+```js
+window.PERSONAL_DATA = {
+  name: 'Your Name',
+  title: 'Your Title',
+  about: 'Some lines about you',
+  skills: [],
+  projects: [],
+  socials: {
+    email: 'you@example.com',
+    github: 'https://github.com/you'
+  }
+};
+```
+
+---
+
+## Running locally
+
+No build step. Two options:
+
+1. Double-click `index.html`.
+2. Or run a simple server:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open http://localhost:8000.
+
+---
+
+## Project structure
+
+```
+index.html    — page structure
+styles.css    — themes and effects
+script.js     — terminal logic
+data.js       — your personal info
+```
+
+---
+
+## Live site
+
+https://dev-aj-5.github.io/terminal-portfolio
+
+---
+
+## License
+
+MIT.
