@@ -54,7 +54,7 @@ Welcome to my terminal! Type help to explore commands.
     socials: {
         email: 'ArthurJHayden@proton.me',
         github: 'https://github.com/dev-aj-5'
-        // LinkedIn and Twitter removed per request
+        
     },
     
     // Fun fact (shown in 'secret' command)
