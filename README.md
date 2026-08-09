@@ -1,35 +1,90 @@
-# ⌨️ Terminal Portfolio
+# Terminal Portfolio
 
-> **A cyberpunk-styled, fully interactive terminal portfolio that runs in your browser.**
-> Type commands. Switch themes. Discover secrets. Welcome to the vibe.
-
----
-
-## 🚀 What is this?
-
-It's my personal portfolio reimagined as a terminal. No scrolling pages, no
-boring hero images — just a blinking cursor and a keyboard. Type `help` and
-see what happens. It's part flex, part art project, part "hey, I built this"
-— and it's 100% mine.
-
-Built with **vanilla HTML, CSS, and JavaScript**. No frameworks. No bloat.
-Just good old-fashioned frontend sorcery.
+A personal portfolio built as a fully interactive terminal. No scrolling pages, no frameworks, no bloat. Just a command line, a blinking cursor, and the keyboard. Type commands, switch themes, find easter eggs. Built with vanilla HTML, CSS, and JavaScript.
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | What it does |
 |---------|--------------|
-| 🖥️ **Real terminal experience** | Commands, output, arrow-key history (sort of — okay, it's mostly the Enter key) |
-| 🌈 **4 themes** | `neon`, `amber`, `matrix`, `solarized` — switch on the fly |
-| 🖼️ **ASCII boot sequence** | A bigger-than-needed HWBT banner + system boot lines |
-| 🌧️ **Matrix rain** | Subtle background rain. Yes, you're a hacker now |
-| 📺 **CRT scanlines** | Retro monitor vibes, minus the back pain |
-| 🔊 **Keystroke beep** | Toggleable sound. Old man hacker energy |
-| 🎭 **Easter eggs** | `sudo`, `secret`, `exit` — try them |
-| 💾 **Zero dependencies** | Literally just 4 files and your browser |
+| Real terminal interface | Commands, output, authentic CLI feel |
+| 4 themes | `neon`, `amber`, `matrix`, `solarized` — switch instantly |
+| ASCII boot sequence | System boot animation on load |
+| Matrix rain | Subtle background rain effect |
+| CRT scanlines | Retro monitor aesthetic |
+| Keystroke audio | Toggleable sound effects |
+| Easter eggs | `sudo`, `secret`, `exit` — explore |
+| Zero dependencies | 4 files, no frameworks, no packages |
 
 ---
-## 🎮 Commands
 
+## Commands
+
+```text
+about       — short intro
+skills      — tech stack
+projects    — what I've built
+contact     — email and GitHub
+theme       — switch themes (neon/amber/matrix/solarized)
+clear       — wipe the screen
+help        — show all commands
+```
+
+Some commands exist just to surprise you. Try `sudo`, `secret`, or `exit`.
+
+---
+
+## Customizing
+
+All personal data lives in `data.js`. Open it, replace the placeholder content, and you're set.
+
+```js
+window.PERSONAL_DATA = {
+  name: 'Your Name',
+  title: 'Your Title',
+  about: 'Some lines about you',
+  skills: [],
+  projects: [],
+  socials: {
+    email: 'you@example.com',
+    github: 'https://github.com/you'
+  }
+};
+```
+
+---
+
+## Running Locally
+
+No build step required.
+
+1. Double-click `index.html` to open directly in the browser.
+2. Or start a local server:
+   ```bash
+   python3 -m http.server 8000
+   ```
+   Then navigate to `http://localhost:8000`.
+
+---
+
+## Project Structure
+
+```
+index.html    — page structure
+styles.css    — themes and effects
+script.js     — terminal logic
+data.js       — your personal info
+```
+
+---
+
+## Live Site
+
+https://dev-aj-5.github.io/terminal-portfolio
+
+---
+
+## License
+
+MIT.
